@@ -16,5 +16,14 @@ namespace pole
             string[] output = line.Split("\r\n");
             return output;
         }
+        public void Write()
+        {
+            string[] input = nameLoading();
+            for (int i = 0; i < input.Length; i++)
+            {
+                Console.WriteLine(input[i]);
+                i++;
+            }
+        }
     }
 }

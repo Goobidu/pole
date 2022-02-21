@@ -8,27 +8,22 @@ namespace pole
 {
     class IncCreate
     {
-        public string[] Create()
+        public List<string> Create()
         {
             var app = new nameLoad();
             string[] input = app.nameLoading();
-            List<string> outp = new List<string>();
-            string res = "";
+
+            List<string> output3 = new List<string>();
             for (int i = 0; i < input.Length; i++)
             { 
             string inputing = input[i];
             string[] output = inputing.Split(' ');
-                for (int i2 = 0; i2 < output.Length - 1; i2++)
-                {
-
-                    string outputing = output[i2];
-                    res = outputing.Substring(0, 1);
-                    string outputi = output[i2 + 1];
-                    string res2 = outputi.Substring(0, 1);
-                }
-
+                var res1 = output[0][0];
+                var res2 = output[1][0];
+                string output2 = res1 + ". " + res2;
+                output3.Add(output2);
             }
-            return input;
+            return output3;
         }
     }
 }
