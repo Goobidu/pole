@@ -8,5 +8,10 @@ namespace pole
 {
     class App
     {
+        public void Run()
+        {
+            var app = new nameLoad();
+            app.nameLoading();
+        }
     }
 }
