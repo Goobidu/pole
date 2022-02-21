@@ -13,10 +13,8 @@ namespace pole
         {
             using var sr = new StreamReader("inpuit.txt");
             string line = sr.ReadToEnd();
-            string[] output = line.Split('\n');
+            string[] output = line.Split("\r\n");
             return output;
-            
-           
         }
     }
 }

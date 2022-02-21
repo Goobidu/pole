@@ -8,6 +8,7 @@ namespace pole
         {
             var app = new App();
             app.Run();
+            
         }
     }
 }

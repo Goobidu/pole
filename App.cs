@@ -12,6 +12,8 @@ namespace pole
         {
             var app = new nameLoad();
             app.nameLoading();
+            var app2 = new IncCreate();
+            app2.Create();
         }
     }
 }
